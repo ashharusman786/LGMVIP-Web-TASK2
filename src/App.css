@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  
+}
+.logo {
+  color: black;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #f69d3c);
+  border-radius: 0.3rem;
+  padding: 2px 25px;
+}
+.App {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 5%;
+  color: white;
+  background-color: #3f87a6;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 0.7rem;
+  margin: 1%;
+}
+
+.navButton {
+  padding: 5px 25px;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  color: black;
+  cursor: pointer;
+  font-weight: 800;
+  
+}
+
+
+.navButton:active {
+  filter: brightness(120%);
+  color: rgb(224, 11, 47)
+}
+
+#containerHeading {
+  text-align: center;
+  margin: 20px 0px;
+  position: relative;
+  text-shadow: 0px 1px 2px grey;
+  font-weight: 50;
+} 
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+}
+
+.card {
+  display: inline-table;
+  text-align: center;
+  margin: 45px;
+  padding: 25px;
+  transition: 0.5s;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 25px black;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border-radius: 75px;
+}
+
+.image {
+  border-radius: 10%;
+  
+  box-shadow: 0px 0px 15px rgb(30, 135, 184);
+} 
+
+.userName {
+  margin: 7px;
+}
+
+@media (min-width: 500px) {
+  .container {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
